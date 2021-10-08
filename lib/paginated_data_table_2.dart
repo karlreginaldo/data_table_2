@@ -624,7 +624,7 @@ class PaginatedDataTable2State extends State<PaginatedDataTable2> {
     final MaterialLocalizations localizations =
         MaterialLocalizations.of(context);
     final ThemeData themeData = Theme.of(context);
-    final TextStyle? footerTextStyle = themeData.textTheme.caption;
+    final TextStyle? footerTextStyle = TextStyle(color: Colors.white);
     final List<Widget> footerWidgets = <Widget>[];
 
     if (widget.onRowsPerPageChanged != null) {
