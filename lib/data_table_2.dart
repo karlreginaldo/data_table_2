@@ -687,24 +687,20 @@ class DataTable2 extends DataTable {
               fit: FlexFit.loose,
               child: tableRows.isEmpty
                   ? empty ?? SizedBox()
-                  : Material(
-                      color: Colors.white,
-                      child: Scrollbar(
-                          isAlwaysShown: false,
-                          child: SingleChildScrollView(
-                              child: marginedTable,
-                              controller: scrollController))))
+                  : Scrollbar(
+                      isAlwaysShown: true,
+                      child: SingleChildScrollView(
+                          child: marginedTable, controller: scrollController)))
         ],
       );
 
       var w = Container(
           decoration: decoration ?? theme.dataTableTheme.decoration,
           child: Material(
-              color: Colors.white,
               type: MaterialType.transparency,
               child: availableWidth > constraints.maxWidth
                   ? Scrollbar(
-                      isAlwaysShown: false,
+                      isAlwaysShown: true,
                       controller: _horizontalController,
                       child: SingleChildScrollView(
                           controller: _horizontalController,
