@@ -689,7 +689,6 @@ class DataTable2 extends DataTable {
                   ? empty ?? SizedBox()
                   : Material(
                       color: Colors.white,
-                      type: MaterialType.transparency,
                       child: Scrollbar(
                           isAlwaysShown: false,
                           child: SingleChildScrollView(
