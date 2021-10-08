@@ -594,6 +594,7 @@ class PaginatedDataTable2State extends State<PaginatedDataTable2> {
         constraints: BoxConstraints(minWidth: constraints.minWidth),
         child: DataTable2(
           key: _tableKey,
+
           columns: widget.columns,
           sortColumnIndex: widget.sortColumnIndex,
           sortAscending: widget.sortAscending,
@@ -786,7 +787,7 @@ class PaginatedDataTable2State extends State<PaginatedDataTable2> {
         // CARD
 
         Widget t = Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             if (isHeaderPresent) _getHeader(),
             _getTable(constraints),
