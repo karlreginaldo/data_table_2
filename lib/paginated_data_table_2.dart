@@ -678,14 +678,20 @@ class PaginatedDataTable2State extends State<PaginatedDataTable2> {
       Container(width: 32.0),
       if (widget.showFirstLastButtons)
         IconButton(
-          icon: const Icon(Icons.skip_previous),
+          icon: const Icon(
+            Icons.skip_previous,
+            Colors.white,
+          ),
           padding: EdgeInsets.zero,
           color: Colors.white,
           tooltip: localizations.firstPageTooltip,
           onPressed: _firstRowIndex <= 0 ? null : _handleFirst,
         ),
       IconButton(
-        icon: const Icon(Icons.chevron_left),
+        icon: const Icon(
+          Icons.chevron_left,
+          Colors.white,
+        ),
         padding: EdgeInsets.zero,
         color: Colors.white,
         tooltip: localizations.previousPageTooltip,
@@ -693,7 +699,10 @@ class PaginatedDataTable2State extends State<PaginatedDataTable2> {
       ),
       Container(width: 24.0),
       IconButton(
-        icon: const Icon(Icons.chevron_right),
+        icon: const Icon(
+          Icons.chevron_right,
+          Colors.white,
+        ),
         padding: EdgeInsets.zero,
         color: Colors.white,
         tooltip: localizations.nextPageTooltip,
@@ -701,7 +710,10 @@ class PaginatedDataTable2State extends State<PaginatedDataTable2> {
       ),
       if (widget.showFirstLastButtons)
         IconButton(
-          icon: const Icon(Icons.skip_next),
+          icon: const Icon(
+            Icons.skip_next,
+            Colors.white,
+          ),
           padding: EdgeInsets.zero,
           color: Colors.white,
           tooltip: localizations.lastPageTooltip,
